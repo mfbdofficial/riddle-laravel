@@ -1153,5 +1153,10 @@ class Riddle_returnSolutionTest extends TestCase
             return array_sum(array_filter($arr, fn($v) => $v > 0));
         }
         self::assertEquals(15, positive_sum([1, 2, 3, 4, 5]));
+
+        function example($a, $b): int
+        {
+            return $a + $b;
+        }
     }
 }
