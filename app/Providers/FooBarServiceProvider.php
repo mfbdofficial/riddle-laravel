@@ -21,7 +21,7 @@ class FooBarServiceProvider extends ServiceProvider
     public function register(): void
     {
         //
-        //echo 'Ini print FooBarServiceProvider ';
+        echo 'Ini print FooBarServiceProvider ';
         $this->app->singleton(Foo::class, function($app) {
             return new Foo();
         });
